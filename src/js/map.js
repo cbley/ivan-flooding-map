@@ -5,7 +5,15 @@ var imageryUrls = {
   naip: '//cbley.com/tiles/naip_2005_dauphin_co/{z}/{x}/{y}.png'
 }
 
-var map = L.mapbox.map('map');
+var southWest = L.latLng(40.0039, -76.9557),
+    northEast = L.latLng(40.3051, -76.4359),
+    bounds = L.latLngBounds(southWest, northEast);
+
+var map = L.mapbox.map('map', null, {
+  maxZoom: 18,
+  minZoom: 13,
+  maxBounds: bounds
+});
 
 var riverBoundaries = L.mapbox.featureLayer().addTo(map);
 riverBoundaries.loadURL('data/riverBoundaries.geojson');

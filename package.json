@@ -1,0 +1,24 @@
+{
+  "name": "ivan_flooding_map",
+  "version": "1.0.0",
+  "description": "A map showing flooding on the Susquehanna after the Tropical Depression Ivan in September 2004",
+  "main": "gulpfile.js",
+  "scripts": {
+    "gulp": "gulp",
+    "build:html": "mkdir -p dist && cp src/index.html dist",
+    "build:js": "mkdir -p dist/js && cp -r src/js dist",
+    "build:css": "mkdir -p dist/style && cp -r src/style dist",
+    "build:data": "mkdir -p dist/data && cp -r data dist",
+    "build": "npm run clean && npm run build:html && npm run build:js && npm run build:css && npm run build:data",
+    "upload": "npm run build && npm run gulp upload",
+    "clean": "rm -r dist/",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Christopher Bley <chrisbley@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-awspublish": "^3.0.1",
+    "gulp-rename": "^1.2.2"
+  }
+}

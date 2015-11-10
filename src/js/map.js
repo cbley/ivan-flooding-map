@@ -1,6 +1,6 @@
 var imageryUrls = {
-  flood: '//cbley.com/tiles/ivan_2004/{z}/{x}/{y}.png',
-  naip: '//cbley.com/tiles/naip_2005_dauphin_co/{z}/{x}/{y}.png'
+  flood: '//{s}.tiles.cbley.com/ivan_2004/{z}/{x}/{y}.png',
+  naip: '//{s}.tiles.cbley.com/naip_2005_dauphin_co/{z}/{x}/{y}.png'
 }
 
 var southWest = L.latLng(40.0039, -76.9557),

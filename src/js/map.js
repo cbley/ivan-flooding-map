@@ -1,5 +1,3 @@
-L.mapbox.accessToken = 'pk.eyJ1IjoiY2JsZXkiLCJhIjoiR2N1SVFwayJ9.VS8A7T-jmRQHYwG1mwBaHw';
-
 var imageryUrls = {
   flood: '//cbley.com/tiles/ivan_2004/{z}/{x}/{y}.png',
   naip: '//cbley.com/tiles/naip_2005_dauphin_co/{z}/{x}/{y}.png'
